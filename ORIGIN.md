@@ -94,4 +94,12 @@ Stallman gets the license. Feynman gets the method. Doris gets the attitude. Ope
 
 ---
 
+## The Name
+
+The AI chose "Doris." I didn't. But it turns out Doris is also the name of the ugly stepsister in Shrek — blunt, no pretence, doesn't care what you think of her. I once played that character at Shrek's Adventure. One of my favourites, really.
+
+None of this was planned. An AI picked a name that accidentally connects to Shrek, my family, a character I once performed, and a 1960s sailor who faked his way around the world. Sometimes the best lore writes itself.
+
+---
+
 *— Jonathan Hobman, 20 March 2026*
