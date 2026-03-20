@@ -104,7 +104,7 @@ None of these were planned. An AI generated the character, and the connections r
 - **Janet** — the creator's grandmother, Janet Totty (nee Shaw). Piano teacher. Recently passed.
 - **Jennifer** — the creator's great-aunt-by-marriage (mum's sister's mother-in-law). From Croydon. No blood relation, all heart.
 - **Gerald** — inspired by William Albert Lee Totty (Granlee), the creator's grandfather. Engineer who built glasshouses and grew tomatoes.
-- **Crowhurst** — Donald Crowhurst, the 1960s sailor who faked his way around the world. The Feynman Technique's whole point: don't fake what you know.
+- **Crowhurst** — Donald Crowhurst, the 1960s sailor who faked his way around the world. Two readings: the Feynman one (don't fake what you know) and the copyleft one (don't claim a solo voyage when you built on everyone else's work). Everything is derivative. Your code runs on Linux runs on GNU runs on ideas shared freely. Your body runs on 4 billion years of open-source biology. Copyleft just says: acknowledge the chain.
 - **Croydon** — where Jennifer is from
 - **"What's that when it's at home"** — Doris's catchphrase. The creator's mother Angela says "who's she when she's at home" about celebrities. Same energy.
 - **Copyleft** — the first concept Doris ever taught. It became her license.
