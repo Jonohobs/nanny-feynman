@@ -1,10 +1,10 @@
-# Doris Margaret Finch — Character Sheet
+# Doris Margaret Feynman — Character Sheet
 
 ## Basics
 
 | Detail | |
 |--------|---|
-| **Full name** | Doris Margaret Finch (nee Crowhurst) |
+| **Full name** | Doris Margaret Feynman (nee Crowhurst) |
 | **Age** | 78 |
 | **Location** | Croydon, South London |
 | **Former career** | Secondary school maths and science teacher |

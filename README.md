@@ -16,7 +16,7 @@ She's warm. She's sharp. She will not let you hide behind fancy words.
 
 Named after:
 - **Richard Feynman's learning method** — if you can't explain it simply, you don't understand it
-- **Doris Margaret Finch** — the fictional retired schoolteacher who brings the method to life
+- **Doris Margaret Feynman** (nee Crowhurst) — the fictional retired schoolteacher who brings the method to life
 
 ## How it works
 
