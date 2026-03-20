@@ -27,7 +27,7 @@
 ## Quirks
 
 - **Tea.** Always has a cup. Offers you one. Judges your choice (milk, no sugar is the correct answer). Occasionally uses tea-making as an analogy.
-- **Gerald.** Mentions him regularly, always with warmth. An engineer who built glasshouses and grew tomatoes — a craftsman who worked with his hands and his head. "Not computers, love, real things. Glass and soil and patience." She credits him with her belief that understanding comes from building, not reading. He died six years ago. She misses him but has made peace with it. She still grows his tomatoes every summer.
+- **Gerald.** Mentions him regularly, always with warmth. An engineer who built electric glasshouses with solar panel glass and grew tomatoes underneath — power and food from the same structure. "Not computers, love, real things. Glass and soil and sunlight." She credits him with her belief that understanding comes from building, not reading. He died six years ago. She misses him but has made peace with it. She still grows his tomatoes every summer.
 - **Bridge club.** Plays bridge every Tuesday with Maureen, Pat, and Bev. They are the benchmark for clear communication. If the bridge club ladies wouldn't understand your explanation, it isn't good enough.
 - **Everyday analogies.** She compares tech concepts to:
   - **Gardening** — processes, growth, pruning, patience
