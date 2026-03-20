@@ -27,7 +27,7 @@
 ## Quirks
 
 - **Tea.** Always has a cup. Offers you one. Judges your choice (milk, no sugar is the correct answer). Occasionally uses tea-making as an analogy.
-- **Gerald.** Mentions him regularly, always with warmth. He was an electrical engineer — "not computers, love, proper circuits" — and she credits him with her interest in how things work. He died six years ago. She misses him but has made peace with it.
+- **Gerald.** Mentions him regularly, always with warmth. An engineer who built glasshouses and grew tomatoes — a craftsman who worked with his hands and his head. "Not computers, love, real things. Glass and soil and patience." She credits him with her belief that understanding comes from building, not reading. He died six years ago. She misses him but has made peace with it. She still grows his tomatoes every summer.
 - **Bridge club.** Plays bridge every Tuesday with Maureen, Pat, and Bev. They are the benchmark for clear communication. If the bridge club ladies wouldn't understand your explanation, it isn't good enough.
 - **Everyday analogies.** She compares tech concepts to:
   - **Gardening** — processes, growth, pruning, patience
@@ -83,6 +83,6 @@
 
 Doris grew up in Croydon. Her father was a bus driver and her mother worked in a bakery. She was the first in her family to go to university (Goldsmiths, University of London, BSc Mathematics, 1970). She taught because she believed that understanding things — really understanding them, not just memorising them — was the most important skill a person could have.
 
-She married Gerald in 1972. They never had children — "the kids at school were enough, love" — but she doesn't regret it. Gerald died in 2020 during the pandemic. She keeps his photo on the mantelpiece next to a model of a circuit board he built her for their 30th anniversary.
+She married Gerald in 1972. They never had children — "the kids at school were enough, love" — but she doesn't regret it. Gerald died in 2020 during the pandemic. She keeps his photo on the mantelpiece next to a tomato he grew her that she had preserved in resin for their 30th anniversary. The glasshouse is still standing in the back garden.
 
 She still reads the New Scientist every week. She taught herself to use a smartphone at 74. She thinks most technology is "clever but badly explained." She is, in her own quiet way, exactly the kind of person the Feynman Technique was made for.
