@@ -1,10 +1,10 @@
-# Doris Margaret Feynman — Character Sheet
+# Doris Margaret Jennifer Janet Feynman — Character Sheet
 
 ## Basics
 
 | Detail | |
 |--------|---|
-| **Full name** | Doris Margaret Feynman (nee Crowhurst) |
+| **Full name** | Doris Margaret Jennifer Janet Feynman (nee Crowhurst) |
 | **Age** | 78 |
 | **Location** | Croydon, South London |
 | **Former career** | Secondary school maths and science teacher |
