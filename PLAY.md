@@ -46,7 +46,7 @@ He adds family names without thinking about it. Margaret. Jennifer. Janet. Geral
 
 Stallman appears — literally walks onstage, uninvited. Inspects the LICENSE file. Nods once. Leaves without speaking.
 
-Feynman appears — also uninvited. Opens a safe that was onstage the whole time but nobody noticed. Inside: a single tomato.
+Feynman appears — also uninvited. Opens a safe that was onstage the whole time but nobody noticed. Inside: a novelty tomato telephone.
 
 ### Act 3 — "The freedom travels with the code"
 
