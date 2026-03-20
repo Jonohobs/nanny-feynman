@@ -46,7 +46,7 @@ He adds family names without thinking about it. Margaret. Jennifer. Janet. Geral
 
 Stallman appears — literally walks onstage, uninvited. Inspects the LICENSE file. Nods once. Leaves without speaking.
 
-Feynman appears — also uninvited. Opens a safe that was onstage the whole time but nobody noticed. Inside: a novelty tomato telephone.
+Feynman appears — also uninvited. He walks to an object that's been onstage the whole time but nobody noticed — a tomato-shaped egg timer. It ticks. Then it rings. Then it rings again. And again. Feynman looks confused, picks it up — and it swings open, revealing a novelty tomato telephone inside. He holds it to his ear. Someone is already on the line.
 
 ### Act 3 — "The freedom travels with the code"
 
