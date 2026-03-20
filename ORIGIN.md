@@ -100,11 +100,13 @@ None of these were planned. An AI generated the character, and the connections r
 
 - **Doris** — also the ugly stepsister in Shrek. Blunt, no pretence, doesn't care what you think. The creator once played her at Shrek's Adventure.
 - **Nanny Feynman** — echoes Fran Fine from *The Nanny*. Sharp, warm, refuses to be ignored.
-- **Margaret** — the creator's mother's maiden name
-- **Jennifer & Janet** — the creator's grandmothers
-- **Gerald** — inspired by the creator's grandfather, who built glasshouses and grew tomatoes
+- **Margaret** — the AI chose this. Connection TBD — it keeps fitting somewhere
+- **Janet** — the creator's grandmother, Janet Totty (nee Shaw). Piano teacher. Recently passed.
+- **Jennifer** — the creator's great-aunt-by-marriage (mum's sister's mother-in-law). From Croydon. No blood relation, all heart.
+- **Gerald** — inspired by William Albert Lee Totty (Granlee), the creator's grandfather. Engineer who built glasshouses and grew tomatoes.
 - **Crowhurst** — Donald Crowhurst, the 1960s sailor who faked his way around the world. The Feynman Technique's whole point: don't fake what you know.
-- **Croydon** — where the creator's grandmother Jennifer is from
+- **Croydon** — where Jennifer is from
+- **"What's that when it's at home"** — Doris's catchphrase. The creator's mother Angela says "who's she when she's at home" about celebrities. Same energy.
 - **Copyleft** — the first concept Doris ever taught. It became her license.
 
 ---
