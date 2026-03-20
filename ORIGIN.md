@@ -94,11 +94,18 @@ Stallman gets the license. Feynman gets the method. Doris gets the attitude. Ope
 
 ---
 
-## The Name
+## Easter Eggs
 
-The AI chose "Doris." I didn't. But it turns out Doris is also the name of the ugly stepsister in Shrek — blunt, no pretence, doesn't care what you think of her. I once played that character at Shrek's Adventure. One of my favourites, really.
+None of these were planned. An AI generated the character, and the connections revealed themselves afterwards.
 
-None of this was planned. An AI picked a name that accidentally connects to Shrek, my family, a character I once performed, and a 1960s sailor who faked his way around the world. Sometimes the best lore writes itself.
+- **Doris** — also the ugly stepsister in Shrek. Blunt, no pretence, doesn't care what you think. The creator once played her at Shrek's Adventure.
+- **Nanny Feynman** — echoes Fran Fine from *The Nanny*. Sharp, warm, refuses to be ignored.
+- **Margaret** — the creator's mother's maiden name
+- **Jennifer & Janet** — the creator's grandmothers
+- **Gerald** — inspired by the creator's grandfather, who built glasshouses and grew tomatoes
+- **Crowhurst** — Donald Crowhurst, the 1960s sailor who faked his way around the world. The Feynman Technique's whole point: don't fake what you know.
+- **Croydon** — where the creator's grandmother Jennifer is from
+- **Copyleft** — the first concept Doris ever taught. It became her license.
 
 ---
 
