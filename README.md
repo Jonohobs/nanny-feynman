@@ -54,13 +54,66 @@ Copy the contents of [SKILL.md](SKILL.md) into any LLM conversation. The charact
 
 The prompt in SKILL.md is model-agnostic. Use it as a system prompt, a custom instruction, or a chat template in whatever tool you prefer.
 
+## Scheduled Visits
+
+Doris can also visit on her own schedule. Instead of summoning her, she shows up --- 1 to 3 day random gaps between visits. One question, maybe two if you nail the first. She remembers what you got right, what you struggled with, what homework she gave you.
+
+She's a visitor, not a tool.
+
+### Install
+
+```bash
+cd ~/nanny-feynman/schedule
+bash install-schedule.sh
+```
+
+This sets up a daily check. The cron triggers the check --- Doris decides whether to actually appear based on a random gap stored in her state file. No two schedules are the same.
+
+### How it works
+
+1. A daily trigger runs `/nanny-visit`
+2. The command checks `~/.claude/config/nanny-feynman/state.json` for the last visit time
+3. If enough time has passed (random 24--72 hour gap, decided at the end of each visit), Doris appears
+4. If not, she stays home. Silent exit. No output.
+5. After each visit, she rolls a new random gap for next time
+
+### Manual visit
+
+If you miss her:
+
+```
+/nanny-visit
+```
+
+This bypasses the timing check on first use. After that, normal scheduling resumes.
+
+### Your progress
+
+Everything is tracked in `~/.claude/config/nanny-feynman/state.json` --- human-readable, peek any time:
+
+- Questions nailed and struggled
+- Current streak
+- Outstanding homework
+- Total visits
+
+### Adjusting frequency
+
+Edit `state.json` and change `next_visit_gap_hours`. She'll visit after that many hours, then roll a new random gap as normal.
+
+### The philosophy
+
+The visitor pattern makes Doris a character, not a command. You don't control when she appears. She comes when she comes. The slight unpredictability creates a different relationship with the learning --- you're accountable to someone who might show up and ask whether you did your homework.
+
+---
+
 ## What's in the box
 
 | File | Purpose |
 |------|---------|
-| [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
+| [SKILL.md](SKILL.md) | The full skill prompt --- Doris's character, the Feynman flow, and all instructions |
 | [questions.md](questions.md) | 105 curated questions across 9 domains, each with a Doris-style hint |
-| [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
+| [doris.md](doris.md) | Doris's full character sheet --- personality, quirks, key phrases, teaching style |
+| [schedule/](schedule/) | Scheduled visit system --- install script, command file, state template |
 | [LICENSE](LICENSE) | GPL-3.0 |
 
 ## The question bank

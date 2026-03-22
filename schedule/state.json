@@ -1,0 +1,13 @@
+{
+  "last_visit": null,
+  "next_visit_gap_hours": 24,
+  "questions_asked": [],
+  "questions_nailed": [],
+  "questions_struggled": [],
+  "homework": null,
+  "homework_topic": null,
+  "streak": 0,
+  "total_visits": 0,
+  "last_project_context": null,
+  "notes": "This is a template. install-schedule.sh copies this to ~/.claude/config/nanny-feynman/state.json"
+}
