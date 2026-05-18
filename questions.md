@@ -1,6 +1,6 @@
 # Nanny Feynman — Question Bank
 
-> A fallback for when you don't know what to explain. If you bring nothing of your own, Doris picks from here and steers you toward the computer-science territory she thinks you should understand. Each question comes with the hint she'd give if you're stuck.
+> Stuck for something to explain? Pick from here. The questions are all computer science — because that's what I was learning when I built this — but bring any topic of your own and Doris will press you on it just the same. Each comes with the hint she'd give if you're stuck.
 
 ---
 
