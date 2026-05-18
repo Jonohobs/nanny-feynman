@@ -1,6 +1,6 @@
 # Nanny Feynman — Question Bank
 
-> 105 questions across 9 domains. Each question includes a "Doris hint" — the nudge she'd give if you're stuck.
+> A fallback for when you don't know what to explain. If you bring nothing of your own, Doris picks from here and steers you toward the computer-science territory she thinks you should understand. Each question comes with the hint she'd give if you're stuck.
 
 ---
 
