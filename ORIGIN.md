@@ -95,3 +95,13 @@ Stallman gets the license. Feynman gets the method. Doris gets the attitude. Ope
 ---
 
 *— Jonathan Hobman, 20 March 2026*
+
+---
+
+## The licence switch (2026-05-19)
+
+Nanny Feynman started as GPL-3.0 — copyleft was the first thing Doris taught me, so putting her under it felt right. (See the blockquote at the top of this file. That bit's still true.)
+
+Switched to MIT later. The story was great, but copyleft was always going to put off the people most likely to actually use her — teachers, course-builders, the kind of project she could quietly slot inside. There's no real malicious-use story to protect against. The lesson is the point, and the more places she shows up, the better.
+
+*— Jonathan Hobman, 19 May 2026*
