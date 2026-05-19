@@ -59,25 +59,13 @@ The prompt in SKILL.md is model-agnostic. Use it as a system prompt, a custom in
 | File | Purpose |
 |------|---------|
 | [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
-| [questions.md](questions.md) | 105 curated questions across 9 domains, each with a Doris-style hint |
+| [questions.md](questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
 | [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
 | [LICENSE](LICENSE) | GPL-3.0 |
 
 ## The question bank
 
-105 questions across 9 categories:
-
-- **Computer Science Fundamentals** (15) — hash tables, recursion, Big O, and more
-- **Networking & Web** (15) — DNS, REST, CORS, TCP/UDP
-- **AI & Machine Learning** (15) — transformers, embeddings, backpropagation
-- **Software Engineering** (15) — CI/CD, Docker, technical debt, testing
-- **Databases** (10) — SQL vs NoSQL, ACID, sharding, normalization
-- **Security** (10) — encryption, XSS, OAuth, JWT
-- **Design & UX** (10) — accessibility, design systems, progressive disclosure
-- **Licensing & Open Source** (5) — copyleft, MIT vs GPL, public domain
-- **3D & Graphics** (10) — shaders, ray tracing, WebGPU, scene graphs
-
-Each question comes with a "Doris hint" — the nudge she'd give you if you're stuck.
+There are some leading questions in [questions.md](questions.md) for when you don't bring a topic of your own. They lean toward computer science (because that's what I was learning when I built this) and each comes with the hint Doris would give if you're stuck. Skip it entirely if you'd rather she just generates questions on whatever you're working on.
 
 ## Why GPL-3.0?
 
