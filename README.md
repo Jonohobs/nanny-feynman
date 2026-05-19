@@ -61,15 +61,15 @@ The prompt in SKILL.md is model-agnostic. Use it as a system prompt, a custom in
 | [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
 | [questions.md](questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
 | [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
-| [LICENSE](LICENSE) | GPL-3.0 |
+| [LICENSE](LICENSE) | MIT |
 
 ## The question bank
 
 There are some leading questions in [questions.md](questions.md) for when you don't bring a topic of your own. They lean toward computer science (because that's what I was learning when I built this) and each comes with the hint Doris would give if you're stuck. Skip it entirely if you'd rather she just generates questions on whatever you're working on.
 
-## Why GPL-3.0?
+## License
 
-Because Feynman would want learning to stay free. The copyleft license ensures that any derivative work keeps the same open spirit. Share knowledge, don't hoard it.
+MIT. Use it, fork it, embed it, sell it — the lesson is the point, and the more places Doris turns up, the better.
 
 ## Credits
 
