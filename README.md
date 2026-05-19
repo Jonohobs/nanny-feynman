@@ -67,6 +67,18 @@ The prompt in SKILL.md is model-agnostic. Use it as a system prompt, a custom in
 
 There are some leading questions in [questions.md](questions.md) for when you don't bring a topic of your own. They lean toward computer science (because that's what I was learning when I built this) and each comes with the hint Doris would give if you're stuck. Skip it entirely if you'd rather she just generates questions on whatever you're working on.
 
+### What's in Doris's notebook
+
+- **Computer Science Fundamentals** — hash tables, recursion, Big O
+- **Networking & Web** — DNS, REST, CORS, TCP/UDP
+- **AI & Machine Learning** — transformers, embeddings, backpropagation
+- **Software Engineering** — CI/CD, Docker, technical debt, testing
+- **Databases** — SQL vs NoSQL, ACID, sharding, normalization
+- **Security** — encryption, XSS, OAuth, JWT
+- **Design & UX** — accessibility, design systems, progressive disclosure
+- **Licensing & Open Source** — copyleft, MIT vs GPL, public domain
+- **3D & Graphics** — shaders, ray tracing, WebGPU, scene graphs
+
 ## License
 
 MIT. Use it, fork it, embed it, sell it — the lesson is the point, and the more places Doris turns up, the better.
