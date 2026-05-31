@@ -105,3 +105,11 @@ Nanny Feynman started as GPL-3.0 — copyleft was the first thing Doris taught m
 Switched to MIT later. The story was great, but copyleft was always going to put off the people most likely to actually use her — teachers, course-builders, the kind of project she could quietly slot inside. There's no real malicious-use story to protect against. The lesson is the point, and the more places she shows up, the better.
 
 *— Jonathan Hobman, 19 May 2026*
+
+---
+
+## The second switch — MIT → Apache 2.0 (2026-05-31)
+
+Stayed permissive, just traded up. MIT and Apache 2.0 both say *"take it, do what you like"* — neither is copyleft, so the teachers-and-course-builders rationale above still holds. The difference is the small print: Apache 2.0 adds an **explicit patent grant** (every contributor licenses whatever patents the work needs to run) and a **patent-retaliation** clause (sue someone over this code and your own grant evaporates). MIT is silent on patents — harmless for a prompt, but Apache's belt-and-braces version costs nothing and reassures anyone slotting Doris inside something bigger. Copyright now lives in `NOTICE`; the `LICENSE` file is the verbatim Apache text.
+
+*— Jonathan Hobman, 31 May 2026*

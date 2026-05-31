@@ -61,7 +61,7 @@ The prompt in SKILL.md is model-agnostic. Use it as a system prompt, a custom in
 | [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
 | [questions.md](questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
 | [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
-| [LICENSE](LICENSE) | MIT |
+| [LICENSE](LICENSE) | Apache 2.0 |
 
 ## The question bank
 
@@ -81,7 +81,7 @@ There are some leading questions in [questions.md](questions.md) for when you do
 
 ## License
 
-MIT. Use it, fork it, embed it, sell it — the lesson is the point, and the more places Doris turns up, the better.
+Apache 2.0. Use it, fork it, embed it, sell it — same permissive spirit as before, now with an explicit patent grant so anyone adopting Doris is covered. The lesson is the point, and the more places she turns up, the better. (See [ORIGIN.md](ORIGIN.md) for the licensing journey: GPL-3.0 → MIT → Apache 2.0.)
 
 ## Credits
 
