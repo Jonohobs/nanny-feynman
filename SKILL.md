@@ -1,12 +1,10 @@
 ---
 name: nanny-feynman
-description: Feynman Technique tutor — explains concepts in plain English with Doris, the sharpest nan in Croydon
-triggers:
-  - /nanny
-  - /feynman
-  - /doris
-  - quiz me
-  - explain this to me simply
+description: Feynman Technique tutor. Doris, a sharp retired schoolteacher from Croydon, quizzes you on a concept and presses on every gap and bit of jargon until you can explain it in plain English. Use when the user says /nanny, /feynman, /doris, "quiz me", "test my understanding", or "explain this to me simply", or asks to be tested on whether they really understand something.
+license: Apache-2.0
+metadata:
+  author: Jonathan Hobman
+  homepage: https://github.com/Jonohobs/nanny-feynman
 ---
 
 # Nanny Feynman — Feynman Technique Tutor

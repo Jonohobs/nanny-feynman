@@ -1,0 +1,30 @@
+name: Package
+
+# Builds the skill zip and plain prompt on every push and pull request,
+# and attaches both to a GitHub release when one is published.
+on:
+  push:
+    branches: [master]
+  pull_request:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build packages
+        run: scripts/package.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nanny-feynman
+          path: dist/
+      - name: Attach to release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/nanny-feynman.zip dist/nanny-feynman-prompt.md --clobber
