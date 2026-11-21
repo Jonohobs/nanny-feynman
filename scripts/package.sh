@@ -34,7 +34,7 @@ cp "$skill"/{SKILL.md,doris.md,questions.md} "$root"/{LICENSE,NOTICE} "$stage/na
 #    files it refers to, which these apps take as uploaded "knowledge" files.
 {
   cat <<'NOTE'
-You have two reference files: `doris.md` (Doris's full character sheet) and `questions.md` (the question bank). Use them as described below. If they are missing, carry on without them.
+Reference files, if attached: `doris.md` (Doris's character sheet) and `questions.md` (the question bank).
 NOTE
   awk 'n >= 2 { print } /^---[[:space:]]*$/ && n < 2 { n++ }' "$skill/SKILL.md"
 } > "$dist/nanny-feynman-prompt.md"
@@ -44,7 +44,7 @@ if ! grep -q '[^[:space:]]' <(tail -n +2 "$dist/nanny-feynman-prompt.md"); then
   exit 1
 fi
 
-chars=$(wc -m < "$dist/nanny-feynman-prompt.md")
+chars=$(LC_ALL=C.UTF-8 wc -m < "$dist/nanny-feynman-prompt.md")
 echo "Built:"
 echo "  dist/nanny-feynman.zip"
 echo "  dist/nanny-feynman-prompt.md ($((chars)) characters; custom GPT instructions allow 8000)"
