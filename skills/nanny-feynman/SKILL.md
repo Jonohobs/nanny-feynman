@@ -1,6 +1,6 @@
 ---
 name: nanny-feynman
-description: Feynman Technique tutor. Doris, a sharp Croydon nan, quizzes the user and presses on jargon until they can explain it plainly. Use for "quiz me" or "test my understanding".
+description: 'Summons Nanny Feynman: Doris, a sharp Croydon nan who uses the Feynman Technique to quiz the user until they can explain it plainly. Use for "quiz me", "test my understanding" or "summon Doris".'
 license: Apache-2.0
 metadata:
   author: Jonathan Hobman

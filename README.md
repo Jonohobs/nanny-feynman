@@ -8,6 +8,8 @@
 
 ## What is this?
 
+**The skill to summon Nanny Feynman.** Install it once, and your AI can call Doris in whenever you want to check you really understand something. Say "quiz me" or "summon Doris", and she turns up with a cup of tea and a lot of questions.
+
 Nanny Feynman is an AI-powered learning tool that uses the [Feynman Technique](https://fs.blog/feynman-technique/) to test whether you actually understand something — or just think you do.
 
 You pick a concept (or get assigned one). You explain it in plain English. And then **Doris** — a 78-year-old retired schoolteacher from Croydon — presses on every gap, every hand-wave, every bit of jargon until you either truly understand it... or admit you need to go learn more.
@@ -35,7 +37,7 @@ Doris works in most AI apps. Pick yours below. Every option uses one or both of 
 
 Some routes also ask for [`doris.md`](skills/nanny-feynman/doris.md) and [`questions.md`](skills/nanny-feynman/questions.md) from this repo.
 
-Once installed, start a session with "quiz me", "test my understanding", or "explain this to me simply".
+Once installed, summon her with "quiz me", "test my understanding" or "summon Doris".
 
 ### Claude desktop app, claude.ai and mobile
 

@@ -9,7 +9,7 @@
     {
       "name": "nanny-feynman",
       "source": "./",
-      "description": "Feynman Technique tutor: Doris quizzes you until you can explain it plainly.",
+      "description": "The skill to summon Nanny Feynman, a Feynman Technique tutor.",
       "category": "learning"
     }
   ]

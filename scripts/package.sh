@@ -17,7 +17,7 @@ trap 'rm -rf "$stage"' EXIT
 
 head -1 "$skill/SKILL.md" | grep -q '^---' || { echo "SKILL.md has no YAML frontmatter" >&2; exit 1; }
 
-desc_len=$(sed -n 's/^description: //p' "$skill/SKILL.md" | head -1 | tr -d '\n' | wc -m)
+desc_len=$(sed -n 's/^description: //p' "$skill/SKILL.md" | head -1 | sed "s/^['\"]//; s/['\"]$//" | tr -d '\n' | wc -m)
 if [ "$desc_len" -gt 200 ]; then
   echo "SKILL.md description is $((desc_len)) characters; Claude's skill upload allows 200" >&2
   exit 1
