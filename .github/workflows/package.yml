@@ -1,0 +1,49 @@
+name: Package
+
+# Builds the skill zip and plain prompt on every push and pull request,
+# and attaches both to a GitHub release when one is published.
+# A release created by another workflow's GITHUB_TOKEN doesn't trigger this:
+# run it by hand (Actions -> Package -> Run workflow) with the tag instead.
+on:
+  push:
+    branches: [master]
+  pull_request:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to attach the files to
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build packages
+        run: scripts/package.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nanny-feynman
+          path: dist/
+
+  release:
+    needs: build
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: nanny-feynman
+          path: dist/
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: gh release upload "$TAG" dist/nanny-feynman.zip dist/nanny-feynman-prompt.md --clobber --repo "$GITHUB_REPOSITORY"

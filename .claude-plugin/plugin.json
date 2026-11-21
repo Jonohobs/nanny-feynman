@@ -1,0 +1,13 @@
+{
+  "name": "nanny-feynman",
+  "version": "1.0.0",
+  "description": "The skill to summon Nanny Feynman: Doris, a sharp retired schoolteacher from Croydon, quizzes you with the Feynman Technique until you can explain it plainly.",
+  "author": {
+    "name": "Jonathan Hobman",
+    "url": "https://github.com/Jonohobs"
+  },
+  "homepage": "https://github.com/Jonohobs/nanny-feynman",
+  "repository": "https://github.com/Jonohobs/nanny-feynman",
+  "license": "Apache-2.0",
+  "keywords": ["learning", "feynman-technique", "tutor", "quiz", "education"]
+}

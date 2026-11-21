@@ -1,0 +1,16 @@
+{
+  "name": "nanny-feynman",
+  "description": "Nanny Feynman, a Feynman Technique tutor for Claude Code.",
+  "owner": {
+    "name": "Jonathan Hobman",
+    "url": "https://github.com/Jonohobs"
+  },
+  "plugins": [
+    {
+      "name": "nanny-feynman",
+      "source": "./",
+      "description": "The skill to summon Nanny Feynman, a Feynman Technique tutor.",
+      "category": "learning"
+    }
+  ]
+}
