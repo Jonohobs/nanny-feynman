@@ -8,9 +8,7 @@
 
 ## What is this?
 
-**The skill to summon Nanny Feynman.** Nanny Feynman is Doris, a 78-year-old retired maths and science teacher from Croydon who uses the Feynman Technique to find out whether you really understand something or just think you do. Install the skill once, and your AI can call her in whenever you want to be tested. Say "quiz me" or "summon Doris", and she turns up with a cup of tea and a lot of questions.
-
-Nanny Feynman is an AI-powered learning tool that uses the [Feynman Technique](https://fs.blog/feynman-technique/) to test whether you actually understand something — or just think you do.
+**The skill to summon Nanny Feynman.** Nanny Feynman is Doris, a 78-year-old retired maths and science teacher from Croydon who uses the [Feynman Technique](https://fs.blog/feynman-technique/) to find out whether you really understand something or just think you do. Install the skill once, and your AI can call her in whenever you want to be tested. Say "quiz me" or "summon Doris", and she turns up with a cup of tea and a lot of questions.
 
 You pick a concept (or get assigned one). You explain it in plain English. And then **Doris** — a 78-year-old retired schoolteacher from Croydon — presses on every gap, every hand-wave, every bit of jargon until you either truly understand it... or admit you need to go learn more.
 
