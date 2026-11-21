@@ -10,13 +10,14 @@
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
+skill="$root/skills/nanny-feynman"
 dist="$root/dist"
 stage="$(mktemp -d)"
 trap 'rm -rf "$stage"' EXIT
 
-head -1 "$root/SKILL.md" | grep -q '^---' || { echo "SKILL.md has no YAML frontmatter" >&2; exit 1; }
+head -1 "$skill/SKILL.md" | grep -q '^---' || { echo "SKILL.md has no YAML frontmatter" >&2; exit 1; }
 
-desc_len=$(sed -n 's/^description: //p' "$root/SKILL.md" | head -1 | tr -d '\n' | wc -m)
+desc_len=$(sed -n 's/^description: //p' "$skill/SKILL.md" | head -1 | tr -d '\n' | wc -m)
 if [ "$desc_len" -gt 200 ]; then
   echo "SKILL.md description is $((desc_len)) characters; Claude's skill upload allows 200" >&2
   exit 1
@@ -26,7 +27,7 @@ rm -rf "$dist"
 mkdir -p "$dist" "$stage/nanny-feynman"
 
 # 1. Skill bundle: one top-level folder holding SKILL.md and its reference files.
-cp "$root"/{SKILL.md,doris.md,questions.md,LICENSE,NOTICE} "$stage/nanny-feynman/"
+cp "$skill"/{SKILL.md,doris.md,questions.md} "$root"/{LICENSE,NOTICE} "$stage/nanny-feynman/"
 (cd "$stage" && zip -qr "$dist/nanny-feynman.zip" nanny-feynman)
 
 # 2. Plain prompt: SKILL.md without its YAML frontmatter, plus a note about the
@@ -35,7 +36,7 @@ cp "$root"/{SKILL.md,doris.md,questions.md,LICENSE,NOTICE} "$stage/nanny-feynman
   cat <<'NOTE'
 You have two reference files: `doris.md` (Doris's full character sheet) and `questions.md` (the question bank). Use them as described below. If they are missing, carry on without them.
 NOTE
-  awk 'n >= 2 { print } /^---[[:space:]]*$/ && n < 2 { n++ }' "$root/SKILL.md"
+  awk 'n >= 2 { print } /^---[[:space:]]*$/ && n < 2 { n++ }' "$skill/SKILL.md"
 } > "$dist/nanny-feynman-prompt.md"
 
 if ! grep -q '[^[:space:]]' <(tail -n +2 "$dist/nanny-feynman-prompt.md"); then

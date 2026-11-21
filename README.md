@@ -20,7 +20,7 @@ Named after:
 
 ## How it works
 
-1. **Pick a concept** — choose from the [question bank](questions.md) or bring your own
+1. **Pick a concept** — choose from the [question bank](skills/nanny-feynman/questions.md) or bring your own
 2. **Explain it simply** — pretend you're explaining it to Doris, who is smart but non-technical
 3. **Get pressed** — Doris finds the gaps in your explanation and asks follow-up questions
 4. **Fill the gaps** — either deepen your explanation or admit what you don't know
@@ -33,7 +33,7 @@ Doris works in most AI apps. Pick yours below. Every option uses one or both of 
 - **[`nanny-feynman.zip`](https://github.com/Jonohobs/nanny-feynman/releases/latest/download/nanny-feynman.zip)**: the skill bundle, for apps that support skills (Claude, ChatGPT, Grok, Antigravity, Claude Code).
 - **[`nanny-feynman-prompt.md`](https://github.com/Jonohobs/nanny-feynman/releases/latest/download/nanny-feynman-prompt.md)**: the same instructions as a plain prompt, for custom GPTs, projects and any other chatbot.
 
-Some routes also ask for [`doris.md`](doris.md) and [`questions.md`](questions.md) from this repo.
+Some routes also ask for [`doris.md`](skills/nanny-feynman/doris.md) and [`questions.md`](skills/nanny-feynman/questions.md) from this repo.
 
 Once installed, start a session with "quiz me", "test my understanding", or "explain this to me simply".
 
@@ -88,22 +88,22 @@ Expand-Archive nanny-feynman.zip -DestinationPath $HOME\.gemini\config\skills
 
 The agent loads her when you ask to be quizzed, or you can call her directly with `/nanny-feynman`. In the CLI, run `/skills reload` if she doesn't show up straight away.
 
-### Claude Code (CLI)
+### Claude Code (CLI and the desktop app's Code tab)
 
-```bash
-# macOS / Linux
-mkdir -p ~/.claude/skills
-unzip nanny-feynman.zip -d ~/.claude/skills/
+Nanny Feynman is a Claude Code plugin, with this repo as its marketplace. In Claude Code, run:
+
+```
+/plugin install nanny-feynman --marketplace Jonohobs/nanny-feynman
 ```
 
-```powershell
-# Windows PowerShell
-Expand-Archive nanny-feynman.zip -DestinationPath $HOME\.claude\skills
+On Claude Code older than 2.1.275, add the marketplace first:
+
+```
+/plugin marketplace add Jonohobs/nanny-feynman
+/plugin install nanny-feynman@nanny-feynman
 ```
 
-Or, from a clone of this repo: `mkdir -p ~/.claude/skills/nanny-feynman && cp SKILL.md doris.md questions.md ~/.claude/skills/nanny-feynman/`.
-
-Start her with `/nanny-feynman`, or just say "quiz me".
+Start her with `/nanny-feynman:nanny-feynman`, or just say "quiz me". Updates arrive through `/plugin marketplace update nanny-feynman`.
 
 ### Anything else
 
@@ -113,15 +113,16 @@ The prompt is model-agnostic. Paste `nanny-feynman-prompt.md` in as a system pro
 
 | File | Purpose |
 |------|---------|
-| [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
-| [questions.md](questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
-| [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
+| [SKILL.md](skills/nanny-feynman/SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
+| [questions.md](skills/nanny-feynman/questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
+| [doris.md](skills/nanny-feynman/doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
+| [.claude-plugin/](.claude-plugin) | Claude Code plugin and marketplace manifests |
 | [scripts/package.sh](scripts/package.sh) | For developers (macOS/Linux, needs `zip`): builds `dist/nanny-feynman.zip` and `dist/nanny-feynman-prompt.md`. Releases get them automatically. |
 | [LICENSE](LICENSE) | Apache 2.0 |
 
 ## The question bank
 
-There are some leading questions in [questions.md](questions.md) for when you don't bring a topic of your own. They lean toward computer science (because that's what I was learning when I built this) and each comes with the hint Doris would give if you're stuck. Skip it entirely if you'd rather she just generates questions on whatever you're working on.
+There are some leading questions in [questions.md](skills/nanny-feynman/questions.md) for when you don't bring a topic of your own. They lean toward computer science (because that's what I was learning when I built this) and each comes with the hint Doris would give if you're stuck. Skip it entirely if you'd rather she just generates questions on whatever you're working on.
 
 ### What's in Doris's notebook
 
