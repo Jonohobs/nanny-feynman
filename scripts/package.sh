@@ -14,6 +14,14 @@ dist="$root/dist"
 stage="$(mktemp -d)"
 trap 'rm -rf "$stage"' EXIT
 
+head -1 "$root/SKILL.md" | grep -q '^---' || { echo "SKILL.md has no YAML frontmatter" >&2; exit 1; }
+
+desc_len=$(sed -n 's/^description: //p' "$root/SKILL.md" | head -1 | tr -d '\n' | wc -m)
+if [ "$desc_len" -gt 200 ]; then
+  echo "SKILL.md description is $((desc_len)) characters; Claude's skill upload allows 200" >&2
+  exit 1
+fi
+
 rm -rf "$dist"
 mkdir -p "$dist" "$stage/nanny-feynman"
 
@@ -26,15 +34,19 @@ cp "$root"/{SKILL.md,doris.md,questions.md,LICENSE,NOTICE} "$stage/nanny-feynman
 {
   cat <<'NOTE'
 You have two reference files: `doris.md` (Doris's full character sheet) and `questions.md` (the question bank). Use them as described below. If they are missing, carry on without them.
-
 NOTE
   awk 'n >= 2 { print } /^---[[:space:]]*$/ && n < 2 { n++ }' "$root/SKILL.md"
 } > "$dist/nanny-feynman-prompt.md"
 
+if ! grep -q '[^[:space:]]' <(tail -n +2 "$dist/nanny-feynman-prompt.md"); then
+  echo "Generated prompt is empty: check SKILL.md frontmatter" >&2
+  exit 1
+fi
+
 chars=$(wc -m < "$dist/nanny-feynman-prompt.md")
 echo "Built:"
 echo "  dist/nanny-feynman.zip"
-echo "  dist/nanny-feynman-prompt.md ($chars characters; custom GPT instructions allow 8000)"
+echo "  dist/nanny-feynman-prompt.md ($((chars)) characters; custom GPT instructions allow 8000)"
 if [ "$chars" -gt 8000 ]; then
   echo "WARNING: prompt is over 8000 characters and will not fit a custom GPT's Instructions box." >&2
   exit 1

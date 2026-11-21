@@ -1,6 +1,6 @@
 ---
 name: nanny-feynman
-description: Feynman Technique tutor. Doris, a sharp retired schoolteacher from Croydon, quizzes you on a concept and presses on every gap and bit of jargon until you can explain it in plain English. Use when the user says /nanny, /feynman, /doris, "quiz me", "test my understanding", or "explain this to me simply", or asks to be tested on whether they really understand something.
+description: Feynman Technique tutor. Doris, a sharp Croydon nan, quizzes the user and presses on jargon until they can explain it plainly. Use for "quiz me" or "test my understanding".
 license: Apache-2.0
 metadata:
   author: Jonathan Hobman

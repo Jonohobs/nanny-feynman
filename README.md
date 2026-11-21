@@ -28,41 +28,38 @@ Named after:
 
 ## Install
 
-Doris works in most AI apps. Pick yours below. Every option uses the same two downloads, which are attached to each [release](https://github.com/Jonohobs/nanny-feynman/releases):
+Doris works in most AI apps. Pick yours below. Every option uses one or both of these downloads:
 
-- **`nanny-feynman.zip`**: the skill bundle, for apps that support skills (Claude, ChatGPT, Grok, Antigravity, Claude Code).
-- **`nanny-feynman-prompt.md`**: the same instructions as a plain prompt, for custom GPTs, projects and any other chatbot.
+- **[`nanny-feynman.zip`](https://github.com/Jonohobs/nanny-feynman/releases/latest/download/nanny-feynman.zip)**: the skill bundle, for apps that support skills (Claude, ChatGPT, Grok, Antigravity, Claude Code).
+- **[`nanny-feynman-prompt.md`](https://github.com/Jonohobs/nanny-feynman/releases/latest/download/nanny-feynman-prompt.md)**: the same instructions as a plain prompt, for custom GPTs, projects and any other chatbot.
 
-No release yet, or want the latest? Run `scripts/package.sh` and both files appear in `dist/`.
+Some routes also ask for [`doris.md`](doris.md) and [`questions.md`](questions.md) from this repo.
 
 Once installed, start a session with "quiz me", "test my understanding", or "explain this to me simply".
 
 ### Claude desktop app, claude.ai and mobile
 
-Skills need code execution and file creation switched on, in the same Capabilities settings page.
-
 1. Download `nanny-feynman.zip`. Don't unzip it.
-2. In Claude, open **Settings → Capabilities**, find **Skills**, and choose **Upload skill**.
-3. Pick the zip. Nanny Feynman appears in your skills list. Make sure it's switched on.
+2. In **Settings → Capabilities**, make sure **Code execution and file creation** is on. Skills need it.
+3. Go to **Customize → Skills**, click **+ → Create skill → Upload a skill**, and pick the zip.
+4. Make sure Nanny Feynman is switched on in your skills list.
 
-It syncs to the desktop app, web and mobile. Claude picks Doris up automatically when you ask to be quizzed.
+Claude picks Doris up automatically when you ask to be quizzed.
 
-**No Skills option on your plan?** Use a Project instead: create a project, paste `nanny-feynman-prompt.md` into **Project instructions**, and add `doris.md` and `questions.md` to the project's files.
+**Can't use Skills** (for example, your organisation has turned them off)? Use a Project instead: create a project, paste `nanny-feynman-prompt.md` into its instructions, and add `doris.md` and `questions.md` to the project's files.
 
 ### ChatGPT (desktop app and web)
 
-**Custom GPT (Plus, Pro, Business and up):**
+**Project (any plan, including Free):**
 
-1. Go to **Explore GPTs → Create → Configure**.
-2. Name it *Nanny Feynman*. Paste the whole of `nanny-feynman-prompt.md` into **Instructions** (it fits under the 8,000 character limit).
-3. Under **Knowledge**, upload `doris.md` and `questions.md`.
-4. Add a conversation starter such as *"Quiz me, Doris"*, then **Create**.
+1. Create a new project.
+2. Paste the whole of `nanny-feynman-prompt.md` into the project's instructions.
+3. Add `doris.md` and `questions.md` as project files.
+4. Start a chat in the project and say "quiz me".
 
-The GPT shows up in the ChatGPT desktop app's sidebar as well as on the web.
+**Custom GPT (Business, Enterprise and Edu workspaces):** on the web, go to **Explore GPTs → Create**. Paste `nanny-feynman-prompt.md` into **Instructions**, upload `doris.md` and `questions.md` under **Knowledge**, and add a conversation starter such as *"Quiz me, Doris"*. Personal accounts (Free, Plus, Pro) can use GPTs but can't create new ones, so use a Project there.
 
-**Skills (Business, Enterprise and Edu workspaces):** open **Plugins → Plugin Directory → Skills → Create → Upload from your computer**, upload `nanny-feynman.zip`, then **Install**. ChatGPT scans new skills before they can be used.
-
-**Any plan, quickest:** a ChatGPT **Project** with `nanny-feynman-prompt.md` as its instructions and the two `.md` files added works too.
+**Skills (Business, Enterprise, Edu and Healthcare workspaces):** open **Plugins → Plugin Directory → Skills → Create → Upload from your computer** and upload `nanny-feynman.zip`. ChatGPT scans new skills before they can be used.
 
 ### Grok
 
@@ -70,7 +67,7 @@ The GPT shows up in the ChatGPT desktop app's sidebar as well as on the web.
 
 **Projects:** create a project on grok.com, paste `nanny-feynman-prompt.md` into its instructions and add `doris.md` and `questions.md` as files.
 
-> Grok's skill upload format isn't documented yet, so the Projects route is the reliable one.
+> Grok doesn't document which file formats its skill upload accepts yet, so if the zip is refused, the Skill Creator or a Project is the way in.
 
 ### Google Antigravity
 
@@ -80,7 +77,13 @@ Antigravity reads skills from folders. Unzip `nanny-feynman.zip` into either:
 - `.agents/skills/` in a project to keep her to that project.
 
 ```bash
+# macOS / Linux
 unzip nanny-feynman.zip -d ~/.gemini/config/skills/
+```
+
+```powershell
+# Windows PowerShell
+Expand-Archive nanny-feynman.zip -DestinationPath $HOME\.gemini\config\skills
 ```
 
 The agent loads her when you ask to be quizzed, or you can call her directly with `/nanny-feynman`. In the CLI, run `/skills reload` if she doesn't show up straight away.
@@ -88,8 +91,14 @@ The agent loads her when you ask to be quizzed, or you can call her directly wit
 ### Claude Code (CLI)
 
 ```bash
+# macOS / Linux
 mkdir -p ~/.claude/skills
 unzip nanny-feynman.zip -d ~/.claude/skills/
+```
+
+```powershell
+# Windows PowerShell
+Expand-Archive nanny-feynman.zip -DestinationPath $HOME\.claude\skills
 ```
 
 Or, from a clone of this repo: `mkdir -p ~/.claude/skills/nanny-feynman && cp SKILL.md doris.md questions.md ~/.claude/skills/nanny-feynman/`.
@@ -107,7 +116,7 @@ The prompt is model-agnostic. Paste `nanny-feynman-prompt.md` in as a system pro
 | [SKILL.md](SKILL.md) | The full skill prompt — Doris's character, the Feynman flow, and all instructions |
 | [questions.md](questions.md) | A starter bank of leading questions for when you don't bring a topic of your own, each with a Doris-style hint |
 | [doris.md](doris.md) | Doris's full character sheet — personality, quirks, key phrases, teaching style |
-| [scripts/package.sh](scripts/package.sh) | Builds `dist/nanny-feynman.zip` and `dist/nanny-feynman-prompt.md` for the apps above |
+| [scripts/package.sh](scripts/package.sh) | For developers (macOS/Linux, needs `zip`): builds `dist/nanny-feynman.zip` and `dist/nanny-feynman-prompt.md`. Releases get them automatically. |
 | [LICENSE](LICENSE) | Apache 2.0 |
 
 ## The question bank
